@@ -4,7 +4,7 @@
 - 本开源是在 [ChenZhaoYu](https://github.com/Chanzhaoyu/chatgpt-web) 基础上做二次开发 ；使用 [midjourney-proxy](https://github.com/novicezk/midjourney-proxy) 提供的midjourney api和 [Suno-API](https://github.com/SunoAI-API/Suno-API)  作为后端而形成的；
 
 
-![cover](./docs/mj2a1.jpg)
+![cover](./images/mj2a1.jpg)
 ## 支持功能 
 - [x] 支持 suno 单独模块，可歌词调整 曲风调整
 - [x] 原chatgpt web 所有功能
@@ -43,7 +43,7 @@
 > - [x] 请到 https://github.com/Dooy/chatgpt-web-midjourney-proxy/releases 下载最新版本安装(选择合适你操作系统的版本)
 > - [x] 选择一个合适的中转服务商( 最好都支持 `gpt`, `gpts`, `midjourney`, `claude`, `suno` )
 > - [x] 中转服务商推荐 https://www.openai-hk.com `一个接口` + `一个key` 支持 `gpt` `midjourney` `claude` `suno`
-![多模态](./docs/suno-ds.jpg)
+![多模态](./images/suno-ds.jpg)
 
 ## Vercel 一键部署
 
@@ -133,35 +133,35 @@ docker run -d --name mj6013  -p 6013:8080  \
 ## 更多展示
 
 ### 自定义服务端api key、base_url：
-![base_url](./docs/gptbase.jpg)
+![base_url](./images/gptbase.jpg)
 
 ### GPTS  GTP Store 
-![多模态](./docs/gpts.jpg)
-![多模态](./docs/gpts1.jpg)
+![多模态](./images/gpts.jpg)
+![多模态](./images/gpts1.jpg)
 
 ### suno 音乐制作
-![suno](./docs/suno.jpg)
+![suno](./images/suno.jpg)
 
 
 ### 录音 whisper  和  tts
-![whisper--tts](./docs/tts-whisper.png)
+![whisper--tts](./images/tts-whisper.png)
 
 ### 局部重绘：
-[![局部重绘](./docs/mj2.jpg)](./docs/mj2.jpg)
+[![局部重绘](./images/mj2.jpg)](./images/mj2.jpg)
 
 ### 换脸
-![换脸](./docs/mj2a2.jpg)
+![换脸](./images/mj2a2.jpg)
 
 ### 混图
-![混图](./docs/mj2a3.jpg)
+![混图](./images/mj2a3.jpg)
 
 ### 支持图片上传图片 供gpt-4-vision-preview使用
-![混图](./docs/mj4a1.png)
+![混图](./images/mj4a1.png)
 手机端：
 <div style="display: flex; flex-wrap: wrap">
- <img src="./docs/mjs1.jpg" style="width:200px" >
- <img src="./docs/mjs2.jpg"  style="width:200px">
- <img src="./docs/mjs3.jpg"  style="width:200px">
+ <img src="./images/mjs1.jpg" style="width:200px" >
+ <img src="./images/mjs2.jpg"  style="width:200px">
+ <img src="./images/mjs3.jpg"  style="width:200px">
 </div>
 
 
@@ -181,7 +181,7 @@ R2_KEY_SECRET=
 R2> 前端UI设置文件服务> 后端文件服务 >跟随中转
 ## 防爆破验证设置
 
-![防爆破](./docs/check_error.jpg)
+![防爆破](./images/check_error.jpg)
 - [x] vercel 不支持；仅支持Docker化部署
 - [x] 如果前面挂载 `nginx` 请配置 `proxy_set_header   X-Forwarded-For  $remote_addr;`
 - [x] 参数如下: 错误验证3次，只能在10分钟后再验证
@@ -218,11 +218,11 @@ MIT © [Dooy](./license)
 <br> `付款备注上您的联系方式`
 <div style="display: flex; flex-wrap: wrap">
     <div style="width:200px">
-        <img src="./docs/wxpay.jpg"  style="width:200px">
+        <img src="./images/wxpay.jpg"  style="width:200px">
         <div>微信捐助</div>
     </div>
     <div style="width:200px">
-        <img src="./docs/alipay.jpg"  style="width:200px"> 
+        <img src="./images/alipay.jpg"  style="width:200px"> 
         <div>支付宝捐助</div>
     </div>
 </div>

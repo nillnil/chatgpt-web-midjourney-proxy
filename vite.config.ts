@@ -34,6 +34,7 @@ export default defineConfig((env) => {
   const viteEnv = loadEnv(env.mode, process.cwd()) as unknown as ImportMetaEnv
 
   return {
+    base: 'chatgpt-web-midjourney-proxy/',
     resolve: {
       alias: {
         '@': path.resolve(process.cwd(), 'src'),
